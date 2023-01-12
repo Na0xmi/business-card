@@ -1,0 +1,40 @@
+body {
+    margin: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius:5px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #073b4c;
+    color: white;
+    border-bottom: 6px solid #06d6a0;
+    border-radius:5px;
+    perspective: 1000px;
+}
+
+
+@keyframes change-color {
+    from {background:#073b4c;}
+    to   {background: #118ab2;}
+}
+
+.card:hover {
+    animation-name: change-color;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
